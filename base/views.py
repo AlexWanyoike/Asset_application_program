@@ -2,12 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 import datetime as dt
 from .forms import ApplicationRequestForm
-#from .models import Employee, Asset_allocation, Associate, Team_leader, Manager
 from django.contrib.auth.forms import UserCreationForm
-#from .forms import EmployeeForm, AssociateForm, Team_leaderForm, ManagerForm, Asset_allocationForm
 from .decorators import managerdecorator
-
-# Create your views here.
 
 
 def welcome(request):

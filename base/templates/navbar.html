@@ -17,37 +17,16 @@
             <a class="logo" href="/">Company X</a>
             <nav>
                 <ul class="nav__links">
-                    {% if user.is_authenticated %}
-                    <li><a href="">Create Post</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">
-                        <div class="container-fluid">
-                            <form class="d-flex">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </a></li>
-                    <li><a href="/logout">Logout</a></li>
-                    {% else %}
-                    <li><a href="">Home</a></li>
-                    <li><a href="register ">Register</a></li>
-                    <li><a href="login">Login</a></li>
-                    {% endif %}                    
+                    <li><a href="teamleader/">Team Leader</a></li>
+                    <li><a href="manager/">Manager</a></li>          
+                    <li><a href="request/ ">Request</a></li>
+                    <li><a href="admin/">Login</a></li>                               
                 </ul>
-
             </nav>
             
             <p class="menu cta">Menu</p>
         </header>
-        <div class="overlay">
-            <a class="close">&times;</a>
-            <div class="overlay__content">
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-            </div>
-        </div>
+        
         <script type="text/javascript" src="mobile.js"></script>
     </body>
 </html>
