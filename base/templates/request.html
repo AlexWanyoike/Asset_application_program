@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% load static %}
+{% block styles %}      
+{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <br>
+    <button type="submit" class="btn btn-primary btn-lg">Apply Asset</button>
+        
+</form>
+
+{% endblock content %}
